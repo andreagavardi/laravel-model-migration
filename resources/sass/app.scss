@@ -1,1 +1,88 @@
-//
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 80%;
+    margin: auto;
+}
+body{
+    background-color: #f2f2f2
+}
+
+#site_header{
+    background-color: white;
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        .logo{
+            img{
+                width: 100px;
+            }
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: black;
+                padding: 0 1rem;
+            }
+        }
+
+    }
+}
+
+#site_main{
+    .tours{
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+        .tour, .tour_details{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tour{
+            box-shadow: 6px 7px 20px #00000082;
+            width: calc(100% / 2 - 1rem);
+            margin: 0.5rem;
+            border-radius: 1rem;
+            background-color: white;
+            img{
+                max-width: 100%;
+                border-top-right-radius: 1rem;
+                border-top-left-radius: 1rem;
+            }
+            h3{
+                padding: 1rem 0;
+                font-size: 1.5rem;
+            }
+            .tour_details{
+                padding: 1rem;
+                .tour_dep, .tour_desc{
+                    padding: 1rem 0;
+                }
+                .tour_price{
+                    .price{
+                        font-size: 1.5rem;
+                    }
+                    a{
+                        margin-left: 5rem;
+                        text-decoration: none;
+                        background-color: #002d72;
+                        color: white;
+                        text-transform: uppercase;
+                        padding: 0.5rem 1.25rem;
+                        border-radius: 0.5rem;
+                        font-weight: 600;
+                    }
+
+                }
+            }
+        }
+    }
+}
