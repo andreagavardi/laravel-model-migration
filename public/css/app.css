@@ -38,6 +38,7 @@ body {
 #site_main .tours {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 2rem 0;
 }
 #site_main .tours .tour, #site_main .tours .tour_details {
@@ -49,6 +50,7 @@ body {
   box-shadow: 6px 7px 20px #00000082;
   width: calc(100% / 2 - 1rem);
   margin: 0.5rem;
+  margin-bottom: 2rem;
   border-radius: 1rem;
   background-color: white;
 }
