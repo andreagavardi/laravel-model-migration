@@ -16,11 +16,11 @@ class CreateToursTable extends Migration
         Schema::create('tours', function (Blueprint $table) {
             $table->id();
             $table->string('title', 100);
-            $table->string('poster');
-            $table->date('departure_on');
-            $table->date('return_on');
+            $table->string('poster')->nullable();
+            $table->date('departure_on')->nullable();
+            $table->date('return_on')->nullable();
             $table->string('departure_airport', 100);
-            $table->text('desc');
+            $table->text('desc')->nullable();
             $table->decimal('price', 5, 0);
             $table->timestamps();
         });
